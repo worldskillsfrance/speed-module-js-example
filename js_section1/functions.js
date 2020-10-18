@@ -16,7 +16,22 @@ function averageAmountSpentPerShop(shops) {
     }, 0) / s.transactions.length) 
   }))
 
-  // Note: The "(s => ({}) )" allows to return directly a value
+  /* Note: This syntax:
+    (s => ({
+      a: 1,
+      b: 2
+    }))
+    
+    allows to return directly a value, here an object.
+    
+    This is exactly the same as : 
+    (s => {
+      return {
+        a: 1,
+        b: 2
+      }
+    })
+  */
 }
 
 /**
